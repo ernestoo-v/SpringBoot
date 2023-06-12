@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+
+    <link rel=" stylesheet" href="css/login.css">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+
+</head>
+<body>
+
+<div>
+    <h1>Welcome</h1>
+    <input type="text" name="username" placeholder="Username" id="loginUsername" required><br>
+    <input type="password" name="password" placeholder="Password" id="loginPassword" required><br>
+    <button onclick="checkLoginButton()">Login</button>
+
+    <div class="textRegister">
+        <p>Don't have an account? </p>
+        <a href="register.html">Register</a>
+    </div>
+    <div  id="wrongUser" class="alert alert-danger alert-dismissible hidden" style="margin-top: 15px ">
+        <strong> Wrong Username or password</strong>
+        <a style="text-decoration: none; color: black; cursor: pointer"  id="closeAlertUserRegister" onclick="closeAlertDiv(1)">&times;</a>
+    </div>
+
+    <div id="emptyFields" class="alert alert-danger alert-dismissible hidden" style="margin-top: 15px">
+        <strong> Empty Fields</strong>
+        <a style="text-decoration: none; color: black; cursor: pointer"  id="closeAlert" onclick="closeAlertDiv(2)">&times;</a>
+    </div>
+</div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/login.js"></script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</html>

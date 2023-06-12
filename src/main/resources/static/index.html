@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crud</title>
+    <link rel=" stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>CRUD</h1>
+
+    <div class="backgroundTable">
+
+        <div style="display: flex; gap: 10px; justify-content: center; align-items: center;">
+            <input type="text" placeholder="Buscar" id="buscador" onchange="checkEmptySearch()">
+
+            <button onclick="cargarAlumnosPorNombre()" class="botonStyle">Por nombre</button>
+            <button onclick="cargarAlumnosPorCalificacion()" class="botonStyle">Por nota</button>
+
+
+        </div>
+
+    <table id="tablaAlumnos">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nombre</th>
+                <th>Calificaciones</th>
+                <th>Eliminar</th>
+                <th>Editar Calificacion</th>
+                <th>Editar nombre</th>
+
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+
+    <div class="editar" style="display: flex">
+        <input type="text" placeholder="Introduce nombre" id="txtAlumno">
+        <input type="text" placeholder="Introduce calificacion." id="txtCalificacion">
+
+        <button class="botonStyle" onclick ="add()">Guardar</button>
+    </div>
+    <div class="editar" id="editarCalificacion" style="margin-top: 20px;">
+        <input type="text" placeholder="introduce id a modif." id="idAlumno">
+        <input type="text" placeholder ="introduce nota nueva" id="txtNuevaNota">
+
+        <button class="botonStyle" onclick="edit()">Editar</button>
+    </div>
+
+    <div class="editar" id="editarNombre" style="margin-top: 20px;">
+        <input type="text" placeholder="introduce id a modif." id="idAlumno2">
+        <input type="text" placeholder ="introduce nombre nuevo" id="txtNuevoAlumno">
+
+        <button class="botonStyle" onclick="edit2()">Editar</button>
+    </div>
+    </div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/tablaAdmin.js"></script>
+</html>

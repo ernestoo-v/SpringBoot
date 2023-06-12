@@ -1,0 +1,86 @@
+body{
+    font-family: monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100vw;
+    height: 100vh;
+    gap: 10px;
+    margin: 0;
+    margin-top: 20px;
+
+    padding: 0;
+}
+
+table{
+    width: 70%;
+    height: 70%;
+    padding: 2px;
+}
+h1{
+    color: green;
+}
+table, tr, td, th{
+    border: solid black 2px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.editar{
+    display: none;
+    justify-content: center;
+    gap: 5px;
+    width: 100%;
+}
+#frutas{
+    width: 200px;
+    height: 100px;
+}
+
+.backgroundTable{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 60%;
+    background: rgba(178, 178, 178, 0.4);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.3px);
+    -webkit-backdrop-filter: blur(8.3px);
+    border: 1px solid rgba(178, 178, 178, 0.53);
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 15px;
+}
+input {
+
+    width:25%;
+    height: 20px;
+
+    background: rgba(255, 255, 255, 0.71);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.8px);
+    -webkit-backdrop-filter: blur(8.8px);
+    border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.botonStyle {
+
+    /*width:20px;*/
+    width: fit-content;
+    height: 20px;
+    /*border-radius: 10px;*/
+    cursor: pointer;
+
+
+    background: rgba(100, 149, 237, 0.79);
+    border-radius: 12px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.8px);
+    -webkit-backdrop-filter: blur(8.8px);
+    border: 1px solid rgba(100, 149, 237, 1);
+}
